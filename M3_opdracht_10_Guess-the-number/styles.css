@@ -1,0 +1,80 @@
+html {
+    font-size: 62.5%;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.before {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.after {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.btn {
+    width: 50rem;
+    height: 10rem;
+    border: 0.1rem solid #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    transition: 1000ms ease;
+}
+
+.btn::before, .btn::after {
+    position: absolute;
+    background: #eee;
+    z-index: -1;
+    transition: 1000ms ease;
+    content: '';
+  }
+
+.btn::before {
+    height: 10rem;
+    width: 44rem;
+  }
+
+.btn::after {
+    width: 50rem;
+    height: 5rem;
+}
+
+.btn:hover:before {
+    width: 0rem;
+    background-color: #fff;
+}
+
+.btn:hover:after {
+    height: 0rem;
+    background-color: #fff;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #fff;
+}
+
