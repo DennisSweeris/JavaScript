@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FFF;
+}
+
+img {
+    width: 20rem;
+    height: 20rem;
+    margin: 0 0 0 2rem;
+    cursor: pointer;
+}
+
+.btn-list {
+    ul {
+        transition: transform 500ms ease, opacity 500ms ease;
+        transform: translateY(-60rem);
+        :last-child {
+            border: none;
+        }
+        li {
+            width: 15vw;
+            height: 6rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            list-style-type: none;
+            border-radius: 0.5rem;
+            margin-bottom: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .btn-mix-wrap {
+            justify-content: space-around;
+            background: linear-gradient(90deg, rgba(211,211,211,1) 0%, rgba(255,0,0,1) 25%, rgba(255,165,0,1) 50%, rgba(128,0,128,1) 75%, rgba(0,128,0,1) 100%);
+            .btn-mix {
+                padding: 1rem 2rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+            .btn-clear {
+                padding: 1rem 2rem;
+                border-radius: 0.5rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// Button colors
+#radio-home {
+    background-color: #D3D3D3;
+}
+
+#radio-red {
+    background-color: #FF0000;
+}
+
+#radio-orange {
+    background-color: #FFA500;
+}
+
+#radio-purple {
+    background-color: #800080;
+}
+
+#radio-green {
+    background-color: #008000;
+}
+
+.intro-text {
+    transition: opacity 350ms ease;
+    opacity: 0;
+    max-width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.center-color {
+    transition: opacity 200ms ease;
+    max-width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4rem;
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
